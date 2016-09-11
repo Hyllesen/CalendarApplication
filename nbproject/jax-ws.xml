@@ -2,11 +2,11 @@
 <jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
   <services>
     <service name="NewWebServiceFromWSDL">
-      <implementation-class>dtu.dk.NewWebServiceFromWSDL</implementation-class>
+      <implementation-class>webservice.CalendarWebService</implementation-class>
       <wsdl-url>file:/C:/Users/stefan/Documents/NetBeansProjects/CalenderApplication/src/java/calendar.wsdl</wsdl-url>
-      <local-wsdl-file>calendarWrapper.wsdl</local-wsdl-file>
-      <service-name>calendarServiceService</service-name>
-      <port-name>calendarServicePort</port-name>
+      <local-wsdl-file>calendar.wsdl</local-wsdl-file>
+      <service-name>calendarService</service-name>
+      <port-name>calendarServicePortTypeBindingPort</port-name>
       <package-name>dk.dtu.imm.ws.calendar</package-name>
       <catalog-file>catalog.xml</catalog-file>
       <use-provider>false</use-provider>

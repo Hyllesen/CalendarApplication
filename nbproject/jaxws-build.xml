@@ -28,8 +28,8 @@
     </target>
     <target name="wsimport-service-NewWebServiceFromWSDL" depends="wsimport-init">
         <mkdir dir="${build.generated.dir}/jax-wsCache/service/NewWebServiceFromWSDL"/>
-        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/service/NewWebServiceFromWSDL" destdir="${build.generated.dir}/jax-wsCache/service/NewWebServiceFromWSDL" wsdl="${basedir}/${conf-dir}xml-resources/web-services/NewWebServiceFromWSDL/wsdl/calendarWrapper.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" xnocompile="true" xendorsed="true">
-            <depends file="${basedir}/${conf-dir}xml-resources/web-services/NewWebServiceFromWSDL/wsdl/calendarWrapper.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/service/NewWebServiceFromWSDL" destdir="${build.generated.dir}/jax-wsCache/service/NewWebServiceFromWSDL" wsdl="${basedir}/${conf-dir}xml-resources/web-services/NewWebServiceFromWSDL/wsdl/calendar.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-services/NewWebServiceFromWSDL/wsdl/calendar.wsdl"/>
             <produces dir="${build.generated.dir}/jax-wsCache/service/NewWebServiceFromWSDL"/>
         </wsimport>
         <copy todir="${build.generated.sources.dir}/jax-ws">

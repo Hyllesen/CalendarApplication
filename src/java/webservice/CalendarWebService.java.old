@@ -1,0 +1,35 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package webservice;
+
+import java.util.HashMap;
+import javax.jws.WebService;
+import javax.xml.datatype.XMLGregorianCalendar;
+
+/**
+ *
+ * @author stefan
+ */
+@WebService(serviceName = "calendarService", portName = "calendarServicePortTypeBindingPort", endpointInterface = "dk.dtu.imm.ws.calendar.CalendarServicePortType", targetNamespace = "http://ws.imm.dtu.dk/calendar", wsdlLocation = "WEB-INF/wsdl/NewWebServiceFromWSDL/calendar.wsdl")
+public class CalendarWebService {
+    
+    HashMap<XMLGregorianCalendar, String> appointments;
+
+    public CalendarWebService() {
+        appointments = new HashMap<XMLGregorianCalendar,String>();
+    }     
+    
+    public void addAppointment(XMLGregorianCalendar appointmentDate, java.lang.String appointmentText) {
+        //TODO implement this method
+        appointments.put(appointmentDate, appointmentText);
+    }
+
+    public java.lang.String getAppointment(javax.xml.datatype.XMLGregorianCalendar dateInput) {
+        //TODO implement this method
+        return appointments.get(dateInput);
+    }
+    
+}
